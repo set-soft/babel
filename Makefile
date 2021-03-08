@@ -1,8 +1,12 @@
+PYTHON?=python3
+
+all:
+
 test: import-cldr
-	@PYTHONWARNINGS=default python ${PYTHON_TEST_FLAGS} -m pytest
+	@PYTHONWARNINGS=default $(PYTHON) ${PYTHON_TEST_FLAGS} -m pytest
 
 test-cov: import-cldr
-	@PYTHONWARNINGS=default python ${PYTHON_TEST_FLAGS} -m pytest --cov=babel
+	@PYTHONWARNINGS=default $(PYTHON) ${PYTHON_TEST_FLAGS} -m pytest --cov=babel
 
 test-env:
 	@virtualenv test-env
@@ -18,7 +22,7 @@ standalone-test: import-cldr test-env
 clean: clean-cldr clean-pyc clean-test-env
 
 import-cldr:
-	@python scripts/download_import_cldr.py
+	@$(PYTHON) scripts/download_import_cldr.py
 
 clean-cldr:
 	@rm -f babel/locale-data/*.dat
@@ -43,6 +47,14 @@ upload-docs:
 	rsync -a docs/_build/babel-docs.zip pocoo.org:/var/www/babel.pocoo.org/docs/babel-docs.zip
 
 release: import-cldr
-	python scripts/make-release.py
+	$(PYTHON) scripts/make-release.py
 
-.PHONY: test develop tox-test clean-pyc clean-cldr import-cldr clean release upload-docs clean-test-env standalone-test
+deb:
+	$(PYTHON) setup.py import_cldr
+	DEB_BUILD_OPTIONS=nocheck fakeroot dpkg-buildpackage -uc -b
+
+deb_clean:
+	fakeroot debian/rules clean
+
+.PHONY: test develop tox-test clean-pyc clean-cldr import-cldr clean release upload-docs clean-test-env standalone-test deb deb_clean
+

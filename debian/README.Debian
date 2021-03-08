@@ -1,0 +1,7 @@
+babel for Debian
+
+Babel is a Python library that provides an integrated collection of utilities
+that assist with internationalizing and localizing Python applications (in
+particular web-based applications.)
+
+ -- Salvador E. Tropea <stropea@inti.gob.ar>  Tue, 02 Mar 2021 12:37:48 -0300

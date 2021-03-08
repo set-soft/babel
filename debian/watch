@@ -1,0 +1,4 @@
+# You must remove unused comment lines for the released package.
+version=3
+https://github.com/set-soft/babel/tags .*/(\d[\d\.]*)\.(?:tar.gz|tar.bz2|tar.xz)
+

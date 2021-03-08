@@ -1,0 +1,17 @@
+Source: python3-babel
+Section: python
+Priority: optional
+Maintainer: Salvador E. Tropea <stropea@inti.gob.ar>
+Build-Depends: debhelper-compat (= 12), dh-python, python3-all
+Standards-Version: 4.5.0
+Homepage: https://github.com/python-babel/babel
+X-Python3-Version: >= 3.2
+
+Package: python3-babel
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Python internationalizing and localizing helper
+ Babel is a Python library that provides an integrated collection of
+ utilities that assist with internationalizing and localizing Python
+ applications (in particular web-based applications.)

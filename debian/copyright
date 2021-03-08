@@ -1,0 +1,234 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: babel
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .coafile
+           .coveragerc
+           .github/workflows/test.yml
+           .gitignore
+           .pre-commit-config.yaml
+           .rultor.yml
+           .tcedit.dst
+           AUTHORS
+           CHANGES
+           CONTRIBUTING.md
+           MANIFEST.in
+           Makefile
+           README.rst
+           babel/__init__.py
+           babel/_compat.py
+           babel/core.py
+           babel/dates.py
+           babel/languages.py
+           babel/lists.py
+           babel/locale-data/.gitignore
+           babel/localedata.py
+           babel/localtime/__init__.py
+           babel/localtime/_unix.py
+           babel/localtime/_win32.py
+           babel/messages/__init__.py
+           babel/messages/checkers.py
+           babel/messages/extract.py
+           babel/messages/frontend.py
+           babel/messages/jslexer.py
+           babel/messages/mofile.py
+           babel/messages/plurals.py
+           babel/messages/pofile.py
+           babel/numbers.py
+           babel/plural.py
+           babel/support.py
+           babel/units.py
+           babel/util.py
+           cldr/.gitignore
+           conftest.py
+           docs/Makefile
+           docs/_static/logo.pdf
+           docs/_static/logo.png
+           docs/_static/logo_small.png
+           docs/_themes/README
+           docs/_themes/babel/layout.html
+           docs/_themes/babel/static/babel.css_t
+           docs/_themes/babel/static/small_babel.css
+           docs/_themes/babel/theme.conf
+           docs/api/core.rst
+           docs/api/dates.rst
+           docs/api/index.rst
+           docs/api/languages.rst
+           docs/api/lists.rst
+           docs/api/messages/catalog.rst
+           docs/api/messages/extract.rst
+           docs/api/messages/index.rst
+           docs/api/messages/mofile.rst
+           docs/api/messages/pofile.rst
+           docs/api/numbers.rst
+           docs/api/plural.rst
+           docs/api/support.rst
+           docs/api/units.rst
+           docs/changelog.rst
+           docs/cmdline.rst
+           docs/conf.py
+           docs/dates.rst
+           docs/dev.rst
+           docs/index.rst
+           docs/installation.rst
+           docs/intro.rst
+           docs/license.rst
+           docs/locale.rst
+           docs/make.bat
+           docs/messages.rst
+           docs/numbers.rst
+           docs/setup.rst
+           docs/support.rst
+           scripts/download_import_cldr.py
+           scripts/generate_authors.py
+           scripts/make-release.py
+           setup.cfg
+           setup.py
+           tests/__init__.py
+           tests/conftest.py
+           tests/messages/__init__.py
+           tests/messages/data/mapping.cfg
+           tests/messages/data/project/__init__.py
+           tests/messages/data/project/file1.py
+           tests/messages/data/project/file2.py
+           tests/messages/data/project/i18n/de/LC_MESSAGES/messages.mo
+           tests/messages/data/project/i18n/fi_BUGGY/LC_MESSAGES/messages.po
+           tests/messages/data/project/ignored/a_test_file.txt
+           tests/messages/data/project/ignored/an_example.txt
+           tests/messages/data/project/ignored/this_wont_normally_be_here.py
+           tests/messages/data/setup.cfg
+           tests/messages/test_js_extract.py
+           tests/messages/test_jslexer.py
+           tests/messages/test_normalized_string.py
+           tests/test_date_intervals.py
+           tests/test_day_periods.py
+           tests/test_languages.py
+           tests/test_lists.py
+           tests/test_smoke.py
+           tox.ini
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     scripts/dump_data.py
+           scripts/dump_global.py
+           scripts/import_cldr.py
+           tests/messages/test_catalog.py
+           tests/messages/test_checkers.py
+           tests/messages/test_extract.py
+           tests/messages/test_frontend.py
+           tests/messages/test_mofile.py
+           tests/messages/test_plurals.py
+           tests/messages/test_pofile.py
+           tests/test_core.py
+           tests/test_dates.py
+           tests/test_localedata.py
+           tests/test_numbers.py
+           tests/test_plural.py
+           tests/test_support.py
+           tests/test_util.py
+Copyright: 2007-2011 Edgewall Software, 2013-2020 the Babel team
+License:   __UNKNOWN__
+ This software is licensed as described in the file LICENSE, which
+ you should have received as part of this distribution. The terms
+ are also available at http://babel.edgewall.org/wiki/License.
+ .
+ This software consists of voluntary contributions made by many
+ individuals. For the exact contribution history, see the revision
+ history and logs, available at http://babel.edgewall.org/log/.
+
+Files:     tests/messages/data/project/i18n/de/LC_MESSAGES/messages.po
+           tests/messages/data/project/i18n/de_DE/LC_MESSAGES/bar.po
+           tests/messages/data/project/i18n/de_DE/LC_MESSAGES/foo.po
+           tests/messages/data/project/i18n/messages_non_fuzzy.pot
+Copyright: 2007 FooBar, Inc.
+License:   _SAME_
+ This file is distributed under the same license as the TestProject
+ project.
+ FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+
+Files:     tests/messages/data/project/i18n/de_DE/LC_MESSAGES/messages.po
+           tests/messages/data/project/i18n/messages.pot
+           tests/messages/data/project/i18n/ru_RU/LC_MESSAGES/messages.po
+Copyright: 2007 FooBar, Inc.
+License:   _SAME_
+ This file is distributed under the same license as the TestProject
+ project.
+ FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+ .
+ , fuzzy
+
+Files:     babel/messages/catalog.py
+Copyright: ... Foo Company
+License:   _SAME_
+ This file is distributed under the same license as the Foobar project.
+
+Files:     tests/messages/data/setup.py
+Copyright: 2006 Ufsoft.org - Pedro Algarvio <ufs@ufsoft.org>
+License:   __UNKNOWN__
+ Please view LICENSE for additional licensing information.
+
+Files:     contrib/babel.js
+Copyright: 2008-2011 Edgewall Software
+License:   __UNKNOWN__
+ This software is licensed as described in the file COPYING, which
+ you should have received as part of this distribution. The terms
+ are also available at http://babel.edgewall.org/wiki/License.
+ .
+ This software consists of voluntary contributions made by many
+ individuals. For the exact contribution history, see the revision
+ history and logs, available at http://babel.edgewall.org/log/.
+ .
+ A simple module that provides a gettext like translation interface.
+ The catalog passed to load() must be a object conforming to this
+ interface::
+ .
+ {
+ messages:     an object of {msgid: translations} items where
+ translations is an array of messages or a single
+ string if the message is not pluralizable.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         docs/_templates/sidebar-links.html
+#         docs/_templates/sidebar-logo.html
+#         docs/_templates/sidebar-about.html
+#         docs/_themes/babel/relations.html
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ Copyright (c) 2013-2020 by the Babel Team, see AUTHORS for more information.
+ .
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the
+     distribution.
+  3. The name of the author may not be used to endorse or promote
+     products derived from this software without specific prior
+     written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+ IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
